@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body-bg: #3a4663;
+  --board-bg: #242d44;
+  --equal-btn-bg: #d03f2f;
+  --equal-btn-hover: #f96b5b;
+  --equal-btn-shadow: #93261a;
+  --input-bg: #181f33;
+  --number-bg: #eae3dc;
+  --number-shadow: #b3a497;
+  --number-color: #434a59;
+  --number-hover: #fffffe;
+  --del-btn-color: white;
+  --del-btn-bg: #647198;
+  --del-btn-hover: #a2b2e1;
+  --del-btn-shadow: #414e73;
+  --main-color: #fff;
+}
+
+@layer components {
+  .number-btn {
+    @apply h-16 hover:bg-[var(--number-hover)] text-[var(--number-color)] shadow-[inset_0px_-4px_0px_var(--number-shadow)] bg-[var(--number-bg)] rounded-xl flex items-center justify-center text-[40px] leading-[37px] -tracking-[0.666667px];
+  }
+
+  .del-btn {
+    @apply text-[var(--del-btn-color)] hover:bg-[var(--del-btn-hover)] -tracking-[0.466667px] text-[28px] shadow-[inset_0px_-4px_0px_var(--del-btn-shadow)] bg-[var(--del-btn-bg)];
+  }
+
+  .reset-btn {
+    @apply col-span-2;
+  }
+  .equal-btn {
+    @apply col-span-2 hover:bg-[var(--equal-btn-hover)] bg-[var(--equal-btn-bg)] shadow-[inset_0px_-4px_0px_var(--equal-btn-shadow)];
+  }
+}

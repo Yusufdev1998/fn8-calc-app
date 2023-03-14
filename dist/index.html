@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Calculator app</title>
+  </head>
+  <body class="h-full">
+    <div class="h-full grid place-items-center bg-[var(--body-bg)]">
+      <div class="text-[var(--main-color)] w-[540px] font-bold">
+        <section id="header" class="mb-8">
+          <div class="flex justify-between items-end">
+            <h3 class="text-[32px] leading-[29px] -tracking-[0.533333px]">
+              calc
+            </h3>
+            <div>
+              <div
+                class="flex mb-[5px] px-3 text-[12px] leading-[13px] justify-end gap-[15px]"
+              >
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+              </div>
+              <div class="flex gap-[26px] items-center">
+                <h4 class="text-[12px] leading-[11px] tracking-[1px]">THEME</h4>
+                <div
+                  id="switch"
+                  class="w-[71px] group cursor-pointer h-[26px] bg-[var(--board-bg)] rounded-[13px] p-[5px]"
+                >
+                  <div
+                    id="circle"
+                    class="w-4 group-hover:bg-[var(--equal-btn-hover)] h-4 bg-[var(--equal-btn-bg)] rounded-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-6">
+          <input
+            id="input"
+            type="text"
+            class="bg-[var(--input-bg)] text-right text-[56px] leading-[52px] -tracking-[0.933333px] w-full py-[40px] px-[32px] rounded-xl"
+          />
+        </section>
+
+        <section id="board">
+          <div
+            class="bg-[var(--board-bg)] rounded-xl p-8 gap-6 grid grid-cols-4"
+          >
+            <button id="number" class="number-btn">7</button>
+            <button id="number" class="number-btn">8</button>
+            <button id="number" class="number-btn">9</button>
+            <button id="del-btn" class="number-btn del-btn">DEL</button>
+            <button id="number" class="number-btn">4</button>
+            <button id="number" class="number-btn">5</button>
+            <button id="number" class="number-btn">6</button>
+            <button id="number" class="number-btn">+</button>
+            <button id="number" class="number-btn">1</button>
+            <button id="number" class="number-btn">2</button>
+            <button id="number" class="number-btn">3</button>
+            <button id="number" class="number-btn">-</button>
+            <button id="number" class="number-btn">.</button>
+            <button id="number" class="number-btn">0</button>
+            <button id="number" class="number-btn">/</button>
+            <button id="number" class="number-btn">x</button>
+            <button id="reset-btn" class="number-btn del-btn reset-btn">
+              RESET
+            </button>
+            <button id="equal-btn" class="number-btn del-btn equal-btn">
+              =
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <script src="../src/index.js" type="module"></script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
